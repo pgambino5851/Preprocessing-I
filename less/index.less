@@ -62,15 +62,16 @@ html, body {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 5rem;
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: 2.5rem;
 }
 
 h3 {
 	font-size: 2.4rem;
+	color: #848C8E;
 }
 
 h3:after { 
@@ -89,11 +90,9 @@ p{
 	line-height: 3rem;
 }
 
-p, a, li {
+p, li {
 	font-size: 1.6rem;
 }
-
-
 
 section{
 	margin-bottom: 2rem;
@@ -110,75 +109,76 @@ li{
 .container {
 	max-width: 1000px;
 	margin: auto;
-}
 
-
-header{	
+	header{	
 	display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 	background-color: #C5D3D6;
 	padding: 2rem 0 1rem;
-	.profile-pic {
-		width: 15rem;
+		.profile-pic {
+			width: 18rem;
 
-		img {
-			width: 100%;
-			border-radius: 50%;
+			img {
+				width: 100%;
+				border-radius: 50%;
+				margin-bottom: 2%;
+			}
+		}
+
+		h1{
+			color: #FFFFFF;
+			margin-bottom:2%;
+		}
+
+		h2{
+			color: #8A9596;
 			margin-bottom: 2%;
 		}
-	}
 
-	h1{
-		color: #FFFFFF;
-		margin-bottom:2%;
-	}
+		nav{
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 2%;
 
-	h2{
-		color: #8A9596;
-		margin-bottom: 2%;
-	}
-
-	nav{
-		width: 100%;
-		display: flex;
-		justify-content: space-around;
-		margin-bottom: 2%;
-
-		a{
-			color: #FFFFFF;
-			text-decoration: none;
+			a{
+				color: #FFFFFF;
+				text-decoration: none;
+				font-size: 1.8rem;
+			}
+		
+			@media (max-width: 500px) {
+				flex-direction: column;
+				align-items: center;
+			}
 		}
-	
-		@media (max-width: 500px) {
+	}
+
+	.main-content{
+		display: flex;
+
+		.about-me {
+			width: 30%;
+			display: flex;
+			flex-wrap: wrap;
 			flex-direction: column;
-			align-items: center;
+			align-content: center;
+			justify-content: center;
+			padding: 3rem;
+		}
+
+		.resume{
+			padding: 3rem 10%;
+			width: 70%;
+			background-color: #E8E8E8;
+
+			h4 .workplace{
+				font-weight: bold;
+			}
 		}
 	}
 }
-
-.main-content{
-	display: flex;
-	margin-top: 2rem;
-
-	.about-me{
-		width: 35%;
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-		align-content: center;
-		justify-content: center;
-		padding: 0 3rem;
-
-	}
-}
-
-
-
-
-
-
-
 
 
