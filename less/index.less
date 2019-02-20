@@ -53,7 +53,132 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html{
+	font-size: 62.5%;
 }
+
+html, body {
+	height: 100%;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2.4rem;
+	color: #848C8E;
+}
+
+h3:after { 
+		content: "";
+    display: block;
+    margin: 1.5rem 0;
+    width: 30%;
+    border-bottom: 0.8rem solid #8A9596;
+}
+
+h4{
+	font-size: 1.8rem;
+}
+
+p{
+	line-height: 3rem;
+}
+
+p, li {
+	font-size: 1.6rem;
+}
+
+section{
+	margin-bottom: 2rem;
+}
+
+ul{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+li{
+	margin-bottom: 1.5rem;
+}
+.container {
+	max-width: 1000px;
+	margin: auto;
+
+	header{	
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	background-color: #C5D3D6;
+	padding: 2rem 0 1rem;
+		.profile-pic {
+			width: 18rem;
+
+			img {
+				width: 100%;
+				border-radius: 50%;
+				margin-bottom: 2%;
+			}
+		}
+
+		h1{
+			color: #FFFFFF;
+			margin-bottom:2%;
+		}
+
+		h2{
+			color: #8A9596;
+			margin-bottom: 2%;
+		}
+
+		nav{
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 2%;
+
+			a{
+				color: #FFFFFF;
+				text-decoration: none;
+				font-size: 1.8rem;
+			}
+		
+			@media (max-width: 500px) {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+
+	.main-content{
+		display: flex;
+
+		.about-me {
+			width: 30%;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-content: center;
+			justify-content: center;
+			padding: 3rem;
+		}
+
+		.resume{
+			padding: 3rem 10%;
+			width: 70%;
+			background-color: #E8E8E8;
+
+			h4 .workplace{
+				font-weight: bold;
+			}
+		}
+	}
+}
+
 
