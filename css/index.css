@@ -137,10 +137,6 @@ html,
 body {
   height: 100%;
 }
-.container {
-  max-width: 1000px;
-  margin: auto;
-}
 h1 {
   font-size: 3rem;
 }
@@ -160,10 +156,27 @@ h3:after {
 h4 {
   font-size: 1.8rem;
 }
+p {
+  line-height: 3rem;
+}
 p,
 a,
 li {
   font-size: 1.6rem;
+}
+section {
+  margin-bottom: 2rem;
+}
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+li {
+  margin-bottom: 1.5rem;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
 }
 header {
   display: flex;
